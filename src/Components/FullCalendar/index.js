@@ -4,7 +4,7 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 
 const FullCalendarComp = props => {
   const { events } = props;
-  console.log("FullCalendar");
+  console.log(events, "events from FullCalendar");
 
   return (
     <FullCalendar
