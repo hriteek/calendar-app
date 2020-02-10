@@ -1,21 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import FullCalendar from "./Components/FullCalendar";
 
 import "./main.scss";
 
 const App = props => {
-  //const {}=props;
-  console.log("App");
+  const [events, setEvents] = useState([
+    { title: "event 1", date: "2020-02-11" },
+    { title: "event 2", date: "2020-02-15" }
+  ]);
+
+  useEffect(() => {
+    // api call here
+  }, []);
 
   return (
     <>
-      <FullCalendar
-        events={[
-          { title: "event 1", date: "2020-02-11" },
-          { title: "event 2", date: "2020-02-15" }
-        ]}
-      />
+      <FullCalendar events={events} />
     </>
   );
 };
