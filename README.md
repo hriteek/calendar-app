@@ -49,8 +49,6 @@ Public API Response:
 3. Add a route /shows
 4. /shows should display a calendar ( you can use something [like](https://fullcalendar.io/) ). You can use vanilla javascript or angular or react here. It should fetch data from /api/shows and display shows in day cell of calendar according to showdatetime
 
-### Please make the application modular. (in future /api/shows might need to fetch data from a database rather than from public api. So it should be easily replacable),Send it by Monday.
-
 ---
 
 ### How to start the project
